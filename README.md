@@ -54,7 +54,7 @@ Claude Desktop の設定ファイル `claude_desktop_config.json` を開き、�
         "--rm",
         "--mount", "type=bind,src=<YOUR_DIR_PATH>,dst=/workspace",
         "-e", "MOCOVOICE_API_KEY",
-        "-e", "MOCOVOICE_API_URL"
+        "-e", "MOCOVOICE_API_URL",
         "ghcr.io/mocomoco-inc/mocovoice-mcp-server"
       ],
       "env": {
