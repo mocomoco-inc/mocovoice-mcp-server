@@ -91,7 +91,6 @@ def extract_transcriptions(transcriptions: list[dict]) -> list[dict]:
                 "書き起こしID": transcription["transcription_id"],
                 "書き起こしデータの取得URL": transcription["transcription_path"],
                 "ステータス": transcription["status"],
-                "話者数": transcription["num_speakers"],
                 "作成日": created_at_str,
                 "音声データの名前": transcription["name"],
             }

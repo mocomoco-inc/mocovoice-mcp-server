@@ -140,7 +140,6 @@ def test_extract_transcriptions_formats_correctly():
             "transcription_id": "abc123",
             "transcription_path": "https://example.com/audio.wav",
             "status": "completed",
-            "num_speakers": 3,
             "created_at": now,
             "name": "example.wav",
         }
@@ -150,7 +149,6 @@ def test_extract_transcriptions_formats_correctly():
     assert isinstance(output, list)
     assert output[0]["書き起こしID"] == "abc123"
     assert output[0]["ステータス"] == "completed"
-    assert output[0]["話者数"] == 3
     assert output[0]["作成日"] == "2024/01/01 12:00"
     assert output[0]["音声データの名前"] == "example.wav"
 
@@ -163,7 +161,6 @@ def test_extract_transcriptions_naive_datetime_handling():
             "transcription_id": "naive123",
             "transcription_path": "/path",
             "status": "done",
-            "num_speakers": 2,
             "created_at": naive,
             "name": "naive.wav",
         }
