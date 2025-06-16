@@ -2,6 +2,9 @@
 
 mocoVoice MCP Server は Claude Desktop と連携して [mocoVoice](https://products.mocomoco.ai/mocoVoice) への書き起こしを実施、また書き起こし結果を確認することができる MCP Serverです。
 
+## デモ動画
+
+[![mocoVoice MCP Server Demo](https://img.youtube.com/vi/ES6Nc61Aefs/0.jpg)](https://www.youtube.com/watch?v=ES6Nc61Aefs)
 
 > [!NOTE]
 > mocoVoice MCP Serverはβ版として提供されているため、全ての機能が実装されていないことに注意してください。
@@ -37,6 +40,7 @@ mocoVoice MCP Server は Claude Desktop と連携して [mocoVoice](https://prod
 - Claude Desktop
 - mocoVoice API KEY (READ / WRITE 権限が必要です)
 
+Claude DesktopでのMCPサーバーの設定方法については、[MCP Quickstart Guide](https://modelcontextprotocol.io/quickstart/user)をご参照ください。
 
 Claude Desktop の設定ファイル `claude_desktop_config.json` を開き、設定を記載します
 - `<YOUR_DIR_PATH>` には書き起こしたい音声ファイルの入ったディレクトリを絶対パスで指定します
@@ -78,6 +82,11 @@ Claude Desktop の設定ファイル `claude_desktop_config.json` を開き、�
   * ".avi", ".mp4", ".rmvb", ".flv", ".mov", ".wm"
 
 
+## 料金について
+
+本MCPサーバーの利用料金は、mocoVoice APIの利用料金として課金されます。書き起こしジョブの実行時にAPI利用料金が発生します。
+
+無料枠を含めた詳細な料金情報については、[mocoVoice API 料金ページ](https://products.mocomoco.ai/mocoVoice-api)をご確認ください。
 
 ## 免責事項
 
