@@ -73,7 +73,7 @@ Claude Desktop の設定ファイル `claude_desktop_config.json` を開き、�
 
 ## 利用可能なファイル形式一覧
 
-最大3GBまでのファイルアップロードに対応しています
+最大5GBまでのファイルアップロードに対応しています
 
 - 音声
   * ".wav", ".mp3", ".m4a", ".caf", ".aiff", ".wma", ".flac", ".ogg", ".aac"
